@@ -1,0 +1,103 @@
+/* styles.css */
+
+.header {
+  background-color: #fff;
+  padding: 10px 20px;
+}
+.container-album {
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 15px color(srgb rgba(186, 126, 126, 0.5));
+    border-radius: 10px;
+    padding: 40px 0px 40px 0px;
+    gap: 40px;
+
+}
+
+h1 h2 {
+    margin: 0px;
+}
+
+.description p{
+    font-family: Poppins, Helvetica;
+    font-size: 0.6em;
+    color: rgb(9, 9, 9);
+    letter-spacing: 1px;
+}
+
+.description{
+    display: flex;
+    width: 400px;
+}
+
+.images-and-version{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & img {
+        width: 800px;
+    }
+
+    & .slideshow-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    & span {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: rgb(136, 14, 28);
+        color: aliceblue;
+    }
+
+    & .focus{
+        background-color: rgb(207, 94, 94);
+    }
+
+    & .pick{
+        text-transform: uppercase;
+    }
+
+    & .sizes {
+        display: flex;
+        justify-content: flex-start;
+        gap: 0.4em;
+
+        & span{
+            border: 1px solid #c12179;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px;
+            font-size: 0.7em;
+
+            &:hover {
+                background-color: #cf71a5;
+                color: #a61515;
+                transition: all 0.4s ease-in-out;
+            }
+        }
+
+    }
+
+}
+
+& .add, .like {
+        background-color: #7a0f0f;
+        padding: 20px;
+        display: inline-block;
+        outline: 0;
+        border: 0;
+        border-radius: 8px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 25px;
+}

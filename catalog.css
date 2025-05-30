@@ -1,0 +1,367 @@
+/* styles.css */
+
+
+body {
+  font-family: Poppins, Helvetica, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  margin: 0px;
+}
+
+.header {
+  background-color: #fff;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 800px;
+}
+
+.nav .logo {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.nav .logo-image {
+  width: 30px;
+  height: 30px;
+  background-image: url(./images/logo-store.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav .logo-name p{
+  display: inline;
+  font-size: 20px; color: #630C09;
+  font-weight: bolder;
+  width: 100%;
+}
+
+.title-link, .title-link:visited, .title-link:hover, .title-link:active {
+  color: #630C09;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.nav .header-menu{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 18px;
+}
+
+
+.catalog-text-link-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog-text-link,
+.catalog-text-link:visited,
+.catalog-text-link:hover,
+.catalog-text-link:active {
+  text-decoration: none;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  transition: color 0.2s ease;
+}
+
+.catalog-text-link:hover {
+  color: #8c0f0c;
+}
+
+.category-box {
+    background-color: #fff;
+    border-radius: 40px;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.category-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+
+
+.banner-search-box {
+    background-color: #fff;
+    border-radius: 40px;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: fit-content;
+}
+
+.banner-search-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.banner-img {
+  width: 400px;     
+  height: auto;        
+  max-width: 600px; 
+  display: block;      
+  margin: 0 auto;      
+}
+
+.search-container {
+  position: absolute;
+  top: 50%;      
+  left: 50%;      
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+
+  width: 800px;
+  height: 70px;
+
+  background-color: #F7F7F7;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+
+
+.search-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.search-input {
+  flex: 1;
+  background-color: #F7F7F7;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.search-button-link {
+  padding: 20px 35px;
+  background-color: #630C09;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.search-button-link:hover {
+  background-color: #440b09;
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    justify-content: center;
+    gap: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 40px;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+}
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  height: fit-content;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card .image-container .image-placeholder-02 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/bruno.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card .image-container .image-placeholder-03 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/jennie.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card .image-container .image-placeholder-01 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/kendrick\ again.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card .image-container .image-placeholder-04 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/riri.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card .image-container .image-placeholder-05 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/kendrick.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card .image-container .image-placeholder-06 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/joji.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card .image-container .image-placeholder-07 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/ag.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card .image-container .image-placeholder-08 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/kali.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card .image-container .image-placeholder-09 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/tame.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card .image-container .image-placeholder-10 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/rosie.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.footer .social-media {
+  display: inline;
+  width: 30px;
+  height: 30px;
+  color: #ddd;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.footer-01 {
+  margin-bottom: 30px;
+}
+
+.footer-01 h2{
+  margin-bottom: 0px;
+}
+
+
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 15px;
+  color: #aaa;
+}
+
+.copyright {
+  text-align: center;
+}

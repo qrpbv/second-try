@@ -1,0 +1,509 @@
+/* styles.css */
+
+
+body {
+  font-family: Poppins, Helvetica, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  margin: 0px;
+}
+
+.header {
+  background-color: #fff;
+  padding: 10px 20px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 800px;
+  
+}
+
+.burger-toggle {
+  display: none;
+}
+
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 20px;
+}
+
+
+
+
+
+.nav .logo {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.nav .logo-image {
+  width: 40px;
+  height: 60%;
+  background-image: url(./images/logo-store.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.title-link, .title-link:visited, .title-link:hover, .title-link:active {
+  color: #630C09;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+
+
+.nav .header-menu{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 18px;
+}
+
+
+.catalog-text-link-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog-text-link,
+.catalog-text-link:visited,
+.catalog-text-link:hover,
+.catalog-text-link:active {
+  text-decoration: none;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  transition: color 0.2s ease;
+}
+
+.catalog-text-link:hover {
+  color: #8c0f0c;
+}
+
+.banner {
+  display: flex;
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 361px;
+  align-items: center;
+  justify-content: left;
+  font-size: 14px;
+  color: #555;
+  padding-bottom: 40px;
+  padding-top: 40px;
+
+  background-image: url(images/backgroundvinyl.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-text {
+padding: 40px;
+}
+
+.banner-text h1 {
+  font-size: 76px; color: #630C09; 
+  line-height: 0.9;
+  margin: 0 0 20px 0;
+
+}
+
+.banner-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  max-width: 400px;
+}
+
+
+.banner-new-arrivals {
+  display: flex;
+  background-color: #630C09;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  margin: 0px;
+}
+
+.banner-new-arrivals-text {
+  font-family: Cinzel, Helvetica;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog-button-wrapper {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.catalog-button-link {
+  padding: 20px 30px;
+  background-color: rgb(24, 24, 24);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.catalog-button-link:hover {
+  background-color: #630C09;
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.new-arrivals {
+  padding: 40px;
+}
+
+.new-arrivals h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card .image-container {
+  width: 100%;
+  height: 211px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.card .image-container .image-placeholder-02 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/rmr.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card .image-container .image-placeholder-03 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/Hamilton_cast_recording_cover.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card .image-container .image-placeholder-01 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/Ariana_Grande_-_Eternal_Sunshine.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card .image-container .image-placeholder-04 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/SZA.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card .image-container .image-placeholder-05 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/twp.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card .image-container .image-placeholder-06 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/american-dream.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card .image-container .image-placeholder-07 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/In_my_own_words_Ne-Yo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card .image-container .image-placeholder-08 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/bruno-mars.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card .image-container .image-placeholder-09 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/goodforyouamine.jpg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card .image-container .image-placeholder-10 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/9_album.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card h3{
+  margin-bottom: 0px;
+}
+
+.card p{
+  margin-top: 0px;
+}
+
+.card .genre {
+  display: block;
+  font-size: 12px;
+  color: #888;
+}
+
+.card .price {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.records {
+  padding: 40px;
+  background-color: #fff;
+  
+}
+
+.records h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.record-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.record {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.record:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.record .image-container {
+  width: 100%;
+  height: 211px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.record .image.placeholder {
+  width: 100%;
+  height: 150px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.record .image-placeholder-01 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/vinyl1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.record .image-placeholder-02 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/vinyl2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.record .image-placeholder-03 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/vinyl3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.record .image-placeholder-04 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/vinyl4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.record .image-placeholder-05 {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/vinyl5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.record .price {
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.footer .social-media {
+  display: flex;
+  width: 15px;
+  height: 15px;
+  color: #ddd;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.footer-01 {
+  margin-bottom: 30px;
+}
+
+.footer-01 h2{
+  margin-bottom: 0px;
+}
+
+
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 15px;
+  color: #aaa;
+}
+
+.copyright {
+  text-align: center;
+}
